@@ -54,6 +54,12 @@ describe('test for the wordCount method', function () {
 
 // toCurrency (typeof String): Returns a currency representation of the String e.g 11111.11 should be represented as 11,111.11.
 let toCurrency = require('../method_files/toCurrency');
+describe('test for the toCurrency method', function () {
+  test('to add a comma for every 3 digits before a dot', function () {
+    let num = new String('11111.11');
+    expect(num.toCurrency()).toBe('11,111.11')
+  })
+})
 
 
 // fromCurrency (typeof Number): Returns a number representation of the Currency String e.g 11,111.11 should return 11111.11
