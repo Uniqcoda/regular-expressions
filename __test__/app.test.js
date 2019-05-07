@@ -1,5 +1,15 @@
 // hasVowels (typeof Boolean): Returns true if the string contains vowels. This method must implement Regular Expression.
 let hasVowels = require('../method_files/hasVowels');
+describe('tests for the hasVowel method', function () {
+    test('to return true if the string contains vowels', function () {
+        let text = 'Hi Tolu! Are you having Fura drink today?';
+        expect(text.hasVowels).toBe(true);
+    })
+    test('to return false if the string does not contain vowels', function () {
+        let text = 'rbg clr tdy';
+        expect(text.hasVowels).toBe(false)
+    })
+})
 
 // toUpper (typeof String): Returns the String in question but with all characters in upper cases as applicable. This method should be implemented without the use of toUpperCase internal methods.
 let toUpper = require('../method_files/toUpper');
