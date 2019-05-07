@@ -1,0 +1,22 @@
+{
+  "name": "regular_expressions",
+  "version": "1.0.0",
+  "description": "An exercise to practise the use of regular expressions, OOP and TDD.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uniqcoda/Regular_Expressions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Uniqcoda/Regular_Expressions/issues"
+  },
+  "homepage": "https://github.com/Uniqcoda/Regular_Expressions#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
