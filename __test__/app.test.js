@@ -22,6 +22,16 @@ let ucFirst = require('../method_files/ucFirst');
 
 // isQuestion (typeof Boolean): Return true if the string is a question (ending with a question mark). This method must implement Regular Expression.
 let isQuestion = require('../method_files/isQuestion');
+describe('test for the isQuestion method', function () {
+    test('to return true if the string is a question', function () {
+        let text = new String('Hi Tolu! Are you having Fura drink today?');
+        expect(text.isQuestion()).toBe(true);
+        });
+      test('to return false if the string is not a question', function () {
+        let text = new String('Hi David!');
+        expect(text.isQuestion()).toBe(false)
+        });
+})
 
 // words: Returns a list of the words in the string, as an Array. This method must implement Regular Expression.
 let wordsArray = require('../method_files/wordsArray');
