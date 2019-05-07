@@ -24,7 +24,7 @@ let ucFirst = require('../method_files/ucFirst');
 let isQuestion = require('../method_files/isQuestion');
 describe('test for the isQuestion method', function () {
     test('to return true if the string is a question', function () {
-        let text = new String('Hi Tolu! Are you having Fura drink today?');
+        let text = new String('Are you having Fura drink today?');
         expect(text.isQuestion()).toBe(true);
         });
       test('to return false if the string is not a question', function () {
