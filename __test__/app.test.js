@@ -35,6 +35,11 @@ describe('test for the isQuestion method', function () {
 
 // words: Returns a list of the words in the string, as an Array. This method must implement Regular Expression.
 let wordsArray = require('../method_files/wordsArray');
+describe('test for the wordsArray method', function () {
+    let text = 'Tick says the clock, tick tick. What you have to do, do quick.';
+    expect(text.wordsArray().length).toBe(13)
+    expect(text.wordsArray()).toContain('Tick', 'says')
+})
 
 // wordCount (typeof Number): Returns the number of words in the string. It must make use of the words method above.
 let wordCount = require('../method_files/wordCount');
