@@ -71,3 +71,13 @@ let numberWords = require('../method_files/numberWords');
 
 // isDigit (typeof Boolean): Returns true if the string is a digit(one number) e.g 3 should return true and 34 should return false. This method must implement Regular Expression.
 let isDigit = require('../method_files/isDigit');
+describe('test for the isDigit method', function () {
+  test('returns true if the string is a digit', function () {
+    let num = new String('5');
+    expect(num.isDigit).toBe(true);
+  })
+  test('returns false if the string is more than a digit', function () {
+    let num = new String('556');
+    expect(num.isDigit).toBe(false);
+  })
+})
