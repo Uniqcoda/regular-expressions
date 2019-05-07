@@ -4,11 +4,11 @@ describe('test for the hasVowel method', function () {
   test('to return true if the string contains vowels', function () {
     let text = new String('Hi Tolu! Are you having Fura drink today?');
     expect(text.hasVowels()).toBe(true);
-    });
+  });
   test('to return false if the string does not contain vowels', function () {
     let text = new String('rbg clr tdy');
     expect(text.hasVowels()).toBe(false)
-    });
+  });
 })
 
 // toUpper (typeof String): Returns the String in question but with all characters in upper cases as applicable. This method should be implemented without the use of toUpperCase internal methods.
@@ -23,26 +23,29 @@ let ucFirst = require('../method_files/ucFirst');
 // isQuestion (typeof Boolean): Return true if the string is a question (ending with a question mark). This method must implement Regular Expression.
 let isQuestion = require('../method_files/isQuestion');
 describe('test for the isQuestion method', function () {
-    test('to return true if the string is a question', function () {
-        let text = new String('Are you having Fura drink today?');
-        expect(text.isQuestion()).toBe(true);
-        });
-      test('to return false if the string is not a question', function () {
-        let text = new String('Hi David!');
-        expect(text.isQuestion()).toBe(false)
-        });
+  test('to return true if the string is a question', function () {
+    let text = new String('Are you having Fura drink today?');
+    expect(text.isQuestion()).toBe(true);
+  });
+  test('to return false if the string is not a question', function () {
+    let text = new String('Hi David!');
+    expect(text.isQuestion()).toBe(false)
+  });
 })
 
 // words: Returns a list of the words in the string, as an Array. This method must implement Regular Expression.
 let wordsArray = require('../method_files/wordsArray');
 describe('test for the wordsArray method', function () {
-    let text = 'Tick says the clock, tick tick. What you have to do, do quick.';
-    expect(text.wordsArray().length).toBe(13)
-    expect(text.wordsArray()).toContain('Tick', 'says')
+  let text = new String('Tick says the clock, tick tick. What you have to do, do quick.');
+  test('to confirm that the new array contains the right things', function () {
+    expect(text.wordsArray().length).toBe(13);
+    expect(text.wordsArray()).toContain('Tick', 'says');
+  })
 })
 
 // wordCount (typeof Number): Returns the number of words in the string. It must make use of the words method above.
 let wordCount = require('../method_files/wordCount');
+
 
 // toCurrency (typeof String): Returns a currency representation of the String e.g 11111.11 should be represented as 11,111.11.
 let toCurrency = require('../method_files/toCurrency');
