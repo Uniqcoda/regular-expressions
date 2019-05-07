@@ -1,2 +1,2 @@
 
-module.exports = wordsArray;
+// module.exports = wordsArray;

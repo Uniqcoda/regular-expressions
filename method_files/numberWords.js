@@ -1,2 +1,2 @@
 
-module.exports = numberWords;
+// module.exports = numberWords;

@@ -1,2 +1,2 @@
 
-module.exports = toLower;
+// module.exports = toLower;

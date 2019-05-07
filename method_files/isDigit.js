@@ -1,2 +1,2 @@
 
-module.exports = isDigit;
+// module.exports = isDigit;

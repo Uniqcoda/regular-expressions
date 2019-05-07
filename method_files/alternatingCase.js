@@ -1,2 +1,2 @@
 
-module.exports = alternatingCase;
+// module.exports = alternatingCase;

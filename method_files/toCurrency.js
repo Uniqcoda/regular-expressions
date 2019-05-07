@@ -1,2 +1,2 @@
 
-module.exports = toCurrency;
+// module.exports = toCurrency;

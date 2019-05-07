@@ -1,2 +1,2 @@
 
-module.exports = isQuestion;
+// module.exports = isQuestion;

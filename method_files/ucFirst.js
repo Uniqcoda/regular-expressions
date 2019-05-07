@@ -1,2 +1,2 @@
 
-module.exports = ucFirst;
+// module.exports = ucFirst;

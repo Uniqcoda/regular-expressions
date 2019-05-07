@@ -1,2 +1,2 @@
 
-module.exports = inverseCase;
+// module.exports = inverseCase;

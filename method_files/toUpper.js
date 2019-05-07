@@ -1,2 +1,2 @@
 
-module.exports = toUpper;
+// module.exports = toUpper;
