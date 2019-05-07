@@ -1,2 +1,2 @@
 
-// module.exports = wordCount;
+module.exports = String.prototype.wordCount;

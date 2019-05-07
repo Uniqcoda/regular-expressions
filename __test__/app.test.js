@@ -45,7 +45,12 @@ describe('test for the wordsArray method', function () {
 
 // wordCount (typeof Number): Returns the number of words in the string. It must make use of the words method above.
 let wordCount = require('../method_files/wordCount');
-
+describe('test for the wordCount method', function () {
+  let text = new String('Tick says the clock, tick tick. What you have to do, do quick.');
+  test('confirms that the new array contains the right number of elements', function () {
+    expect(text.wordCount()).toBe(13);
+  })
+})
 
 // toCurrency (typeof String): Returns a currency representation of the String e.g 11111.11 should be represented as 11,111.11.
 let toCurrency = require('../method_files/toCurrency');
