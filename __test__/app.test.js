@@ -74,10 +74,10 @@ let isDigit = require('../method_files/isDigit');
 describe('test for the isDigit method', function () {
   test('returns true if the string is a digit', function () {
     let num = new String('5');
-    expect(num.isDigit).toBe(true);
-  })
+    expect(num.isDigit()).toBe(true);
+  });
   test('returns false if the string is more than a digit', function () {
     let num = new String('556');
-    expect(num.isDigit).toBe(false);
-  })
+    expect(num.isDigit()).toBe(false);
+  });
 })
