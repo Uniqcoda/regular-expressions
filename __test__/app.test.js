@@ -57,13 +57,21 @@ let toCurrency = require('../method_files/toCurrency');
 describe('test for the toCurrency method', function () {
   test('to add a comma for every 3 digits before a dot', function () {
     let num = new String('1111111.11111');
-    expect(num.toCurrency()).toBe('1,111,111.11111')
-  })
+    expect(num.toCurrency()).toBe('1,111,111.11111');
+    let num2 = new String('1111111');
+    expect(num2.toCurrency()).toBe('1,111,111');
+  });
 })
 
 
 // fromCurrency (typeof Number): Returns a number representation of the Currency String e.g 11,111.11 should return 11111.11
-let fromCurrency = require('../method_files/fromCurrency');
+// let fromCurrency = require('../method_files/fromCurrency');
+// describe('test for the fromCurrency method', function () {
+//   test('returns a number representation of the Currency String', function () {
+//     let num = new String('1,111,111.11111');
+//     expect(num.fromCurrency()).toBe(1111111.11111);
+//   })
+// })
 
 // inverseCase (typeof String): Returns each letter in the string as an inverse of its current case e.g Mr. Ben should return mR. bEN.
 let inverseCase = require('../method_files/inverseCase');
