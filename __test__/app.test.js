@@ -104,6 +104,12 @@ describe('test for the inverseCase method', function () {
 
 // alternatingCase (typeof String): Returns the letters in alternating cases. It must start with a lower case e.g Onomatopoeia should return oNoMaToPoEiA.
 let alternatingCase = require('../method_files/alternatingCase');
+describe('test for alternatingCase method', function () {
+  test('returns a string in alternating case', function () {
+    let text = new String('Onomatopoeia');
+  expect(text.alternatingCase()).toEqual('oNoMaToPoEiA');
+  })
+})
 
 
 // numberWords (typeof String): Returns the numbers in words e.g 325 should return three two five.
