@@ -22,6 +22,12 @@ describe('test for the toUpper method', function () {
 
 // toLower (typeof String): Returns the String in question but with all characters in their lower cases as applicable. This method should be implemented without the use of toLowerCase internal methods.
 let toLower = require('../method_files/toLower');
+describe('test for the toLower method', function () {
+  test('returns string in all lowercase', function () {
+    let text = new String('Hi Tolu! Are you hungry?');
+    expect(text.toLower()).toEqual('hi tolu! are you hungry?')
+  })
+})
 
 // ucFirst (typeof String): Returns the String in question but changes the First Character to an Upper case. Make use of your toUpper method above to implement this method or a one-liner.
 let ucFirst = require('../method_files/ucFirst');
