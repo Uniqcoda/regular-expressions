@@ -31,9 +31,13 @@ describe('test for the toLower method', function () {
 
 // upperCaseFirst (typeof String): Returns the String in question but changes the First Character to an Upper case. Make use of your toUpper method above to implement this method or a one-liner.
 let upperCaseFirst = require('../method_files/upperCaseFirst');
-test('returns first letter as upper case', function () {
-  let text = new String('i am happy');
-  expect(text.upperCaseFirst()).toEqual('I am happy');
+describe('to for the upperCaseFirst method', function () {
+  test('returns first letter as upper case', function () {
+    let text = new String('my name is my name.');
+    expect(text.upperCaseFirst()).toEqual('My name is my name.');
+    console.log(text.upperCaseFirst());
+    
+  })
 })
 
 // isQuestion (typeof Boolean): Return true if the string is a question (ending with a question mark). This method must implement Regular Expression.
@@ -91,6 +95,12 @@ describe('test for the fromCurrency method', function () {
 
 // inverseCase (typeof String): Returns each letter in the string as an inverse of its current case e.g Mr. Ben should return mR. bEN.
 let inverseCase = require('../method_files/inverseCase');
+describe('test for the inverseCase method', function () {
+  test('returns the string in inverse case', function () {
+    let text = new String('Mr. Ben');
+    expect(text.inverseCase()).toEqual('mR. bEN')
+  })
+})
 
 // alternatingCase (typeof String): Returns the letters in alternating cases. It must start with a lower case e.g Onomatopoeia should return oNoMaToPoEiA.
 let alternatingCase = require('../method_files/alternatingCase');

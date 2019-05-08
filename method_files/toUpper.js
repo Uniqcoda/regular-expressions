@@ -6,6 +6,6 @@ String.prototype.toUpper = function () {
   let regex = /([a-z])/g;
   // find the character the matches the regex and replace it with its uppercase equivalent
   return this.replace(regex, convertCharacter);
+  
 }
 
-module.exports = String.prototype.toUpper;
