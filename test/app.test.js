@@ -108,6 +108,8 @@ describe('test for alternatingCase method', function () {
   test('returns a string in alternating case', function () {
     let text = new String('Onomatopoeia');
   expect(text.alternatingCase()).toEqual('oNoMaToPoEiA');
+  console.log(text.alternatingCase());
+  
   })
 })
 

@@ -5,8 +5,6 @@ function convertCharacter(character) {
     return character = String.fromCharCode(charCode - 32);
   } else if (charCode > 63 && charCode < 91) {
     return character = String.fromCharCode(charCode + 32);
-  } else {
-    return character;
   }
 }
 
