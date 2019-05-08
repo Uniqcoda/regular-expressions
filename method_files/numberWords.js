@@ -1,2 +1,1 @@
-
-// module.exports = numberWords;
+module.exports = String.prototype.numberWords;

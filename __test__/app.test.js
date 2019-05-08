@@ -1,11 +1,11 @@
 // hasVowels (typeof Boolean): Returns true if the string contains vowels. This method must implement Regular Expression.
 let hasVowels = require('../method_files/hasVowels');
 describe('test for the hasVowel method', function () {
-  test('to return true if the string contains vowels', function () {
+  test('returns true if the string contains vowels', function () {
     let text = new String('Hi Tolu! Are you having Fura drink today?');
     expect(text.hasVowels()).toBe(true);
   });
-  test('to return false if the string does not contain vowels', function () {
+  test('returns false if the string does not contain vowels', function () {
     let text = new String('rbg clr tdy');
     expect(text.hasVowels()).toBe(false)
   });
@@ -23,11 +23,11 @@ let ucFirst = require('../method_files/ucFirst');
 // isQuestion (typeof Boolean): Return true if the string is a question (ending with a question mark). This method must implement Regular Expression.
 let isQuestion = require('../method_files/isQuestion');
 describe('test for the isQuestion method', function () {
-  test('to return true if the string is a question', function () {
+  test('returns true if the string is a question', function () {
     let text = new String('Are you having Fura drink today?');
     expect(text.isQuestion()).toBe(true);
   });
-  test('to return false if the string is not a question', function () {
+  test('returns false if the string is not a question', function () {
     let text = new String('Hi David!');
     expect(text.isQuestion()).toBe(false)
   });
@@ -82,6 +82,12 @@ let alternatingCase = require('../method_files/alternatingCase');
 
 // numberWords (typeof String): Returns the numbers in words e.g 325 should return three two five.
 let numberWords = require('../method_files/numberWords');
+describe('test for the numberWords method', function () {
+  test('returns the numbers in words', function () {
+    let num = new String('325');
+    expect(num.numberWords()).toBe('three two five');
+  })
+})
 
 // isDigit (typeof Boolean): Returns true if the string is a digit(one number) e.g 3 should return true and 34 should return false. This method must implement Regular Expression.
 let isDigit = require('../method_files/isDigit');
