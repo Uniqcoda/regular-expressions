@@ -56,8 +56,8 @@ describe('test for the wordCount method', function () {
 let toCurrency = require('../method_files/toCurrency');
 describe('test for the toCurrency method', function () {
   test('to add a comma for every 3 digits before a dot', function () {
-    let num = new String('11111.11');
-    expect(num.toCurrency()).toBe('11,111.11')
+    let num = new String('1111111.11111');
+    expect(num.toCurrency()).toBe('1,111,111.11111')
   })
 })
 
