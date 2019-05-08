@@ -13,6 +13,12 @@ describe('test for the hasVowel method', function () {
 
 // toUpper (typeof String): Returns the String in question but with all characters in upper cases as applicable. This method should be implemented without the use of toUpperCase internal methods.
 let toUpper = require('../method_files/toUpper');
+describe('test for the toUpper method', function () {
+  test('returns string in all uppercase', function () {
+    let text = new String('Hi Tolu! Are you having Fura drink today?');
+    expect(text.toUpper()).toEqual('HI TOLU! ARE YOU HAVING FURA DRINK TODAY?')
+  })
+})
 
 // toLower (typeof String): Returns the String in question but with all characters in their lower cases as applicable. This method should be implemented without the use of toLowerCase internal methods.
 let toLower = require('../method_files/toLower');
@@ -83,10 +89,10 @@ let alternatingCase = require('../method_files/alternatingCase');
 // numberWords (typeof String): Returns the numbers in words e.g 325 should return three two five.
 let numberWords = require('../method_files/numberWords');
 describe('test for the numberWords method', function () {
-  test('returns the numbers in words', function () {
+  test('returns a string of numbers in words', function () {
     let num = new String('325');
     expect(num.numberWords()).toBe('three two five');
-  })
+  });
 })
 
 // isDigit (typeof Boolean): Returns true if the string is a digit(one number) e.g 3 should return true and 34 should return false. This method must implement Regular Expression.
