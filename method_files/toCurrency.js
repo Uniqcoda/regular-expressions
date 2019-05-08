@@ -5,7 +5,7 @@ String.prototype.toCurrency = function () {
   let decimalNumber = splitNumber.length > 1 ? '.' + splitNumber[1] : '';
   let regex = /(\d+)(\d{3})/g;
   while (regex.test(wholeNumber)) {
-    wholeNumber = wholeNumber.replace(regex, '$1' + ',' + '$2')
+    wholeNumber = wholeNumber.replace(regex, '$1' + ',' + '$2');
   }
   return wholeNumber + decimalNumber;
 }
