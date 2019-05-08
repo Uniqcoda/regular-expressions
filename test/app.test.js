@@ -7,7 +7,7 @@ describe('test for the hasVowel method', function () {
   });
   test('returns false if the string does not contain vowels', function () {
     let text = new String('rbg clr tdy');
-    expect(text.hasVowels()).toBe(false)
+    expect(text.hasVowels()).toBe(false);
   });
 })
 
@@ -16,7 +16,7 @@ let toUpper = require('../method_files/toUpper');
 describe('test for the toUpper method', function () {
   test('returns string in all uppercase', function () {
     let text = new String('Hi Tolu! Are you having Fura drink today?');
-    expect(text.toUpper()).toEqual('HI TOLU! ARE YOU HAVING FURA DRINK TODAY?')
+    expect(text.toUpper()).toEqual('HI TOLU! ARE YOU HAVING FURA DRINK TODAY?');
   })
 })
 
@@ -34,9 +34,7 @@ let upperCaseFirst = require('../method_files/upperCaseFirst');
 describe('to for the upperCaseFirst method', function () {
   test('returns first letter as upper case', function () {
     let text = new String('my name is my name.');
-    expect(text.upperCaseFirst()).toEqual('My name is my name.');
-    console.log(text.upperCaseFirst());
-    
+    expect(text.upperCaseFirst()).toEqual('My name is my name.');    
   })
 })
 
@@ -49,7 +47,7 @@ describe('test for the isQuestion method', function () {
   });
   test('returns false if the string is not a question', function () {
     let text = new String('Hi David!');
-    expect(text.isQuestion()).toBe(false)
+    expect(text.isQuestion()).toBe(false);
   });
 })
 
@@ -83,7 +81,6 @@ describe('test for the toCurrency method', function () {
   });
 })
 
-
 // fromCurrency (typeof Number): Returns a number representation of the Currency String e.g 11,111.11 should return 11111.11
 let fromCurrency = require('../method_files/fromCurrency');
 describe('test for the fromCurrency method', function () {
@@ -98,7 +95,7 @@ let inverseCase = require('../method_files/inverseCase');
 describe('test for the inverseCase method', function () {
   test('returns the string in inverse case', function () {
     let text = new String('Mr. Ben');
-    expect(text.inverseCase()).toEqual('mR. bEN')
+    expect(text.inverseCase()).toEqual('mR. bEN');
   })
 })
 
@@ -107,12 +104,9 @@ let alternatingCase = require('../method_files/alternatingCase');
 describe('test for alternatingCase method', function () {
   test('returns a string in alternating case', function () {
     let text = new String('Onomatopoeia');
-  expect(text.alternatingCase()).toEqual('oNoMaToPoEiA');
-  console.log(text.alternatingCase());
-  
+  expect(text.alternatingCase()).toEqual('oNoMaToPoEiA');  
   })
 })
-
 
 // numberWords (typeof String): Returns the numbers in words e.g 325 should return three two five.
 let numberWords = require('../method_files/numberWords');

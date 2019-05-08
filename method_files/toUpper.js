@@ -1,4 +1,4 @@
-// a method that converts every lower case character in a string to uppercase
+// A String method that converts every lower case character in a string to uppercase
 // import the method for converting characters
 let convertCharacter = require('../method_files/convertCharacter');
 
@@ -9,3 +9,4 @@ String.prototype.toUpper = function () {
   
 }
 
+module.exports = String.prototype.toUpper;

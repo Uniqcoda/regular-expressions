@@ -1,4 +1,4 @@
-// a method to check if a string is a question
+// A String method to check if a string is a question
 String.prototype.isQuestion = function () {
   let regex = /.+\?$/;
   if (regex.test(this)) return true;

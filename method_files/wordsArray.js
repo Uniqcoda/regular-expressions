@@ -1,4 +1,4 @@
-// a method to create an array containing all the words in a string
+// A String method to create an array containing all the words in a string
 String.prototype.wordsArray = function () {
   let regex = /(\b[a-z]+\b)/ig;
   let array = (this).match(regex);
@@ -7,5 +7,3 @@ String.prototype.wordsArray = function () {
 
 // export the method to the test file
 module.exports = String.prototype.wordsArray;
-
-
