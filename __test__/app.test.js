@@ -25,7 +25,7 @@ let toLower = require('../method_files/toLower');
 describe('test for the toLower method', function () {
   test('returns string in all lowercase', function () {
     let text = new String('Hi Tolu! Are you hungry?');
-    expect(text.toLower()).toEqual('hi tolu! are you hungry?')
+    expect(text.toLower()).toEqual('hi tolu! are you hungry?');
   })
 })
 
