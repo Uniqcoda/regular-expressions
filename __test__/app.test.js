@@ -29,8 +29,12 @@ describe('test for the toLower method', function () {
   })
 })
 
-// ucFirst (typeof String): Returns the String in question but changes the First Character to an Upper case. Make use of your toUpper method above to implement this method or a one-liner.
-let ucFirst = require('../method_files/ucFirst');
+// upperCaseFirst (typeof String): Returns the String in question but changes the First Character to an Upper case. Make use of your toUpper method above to implement this method or a one-liner.
+let upperCaseFirst = require('../method_files/upperCaseFirst');
+test('returns first letter as upper case', function () {
+  let text = new String('i am happy');
+  expect(text.upperCaseFirst()).toEqual('I am happy');
+})
 
 // isQuestion (typeof Boolean): Return true if the string is a question (ending with a question mark). This method must implement Regular Expression.
 let isQuestion = require('../method_files/isQuestion');
