@@ -129,3 +129,16 @@ describe('test for the isDigit method', function () {
     expect(num.isDigit()).toBe(false);
   });
 })
+
+// convertCharacter (typeof String): Takes a single character string and returns the inverse case of the character.
+let convertCharacter = require('../method_files/convertCharacter');
+describe('test for the convertCharacter method', function () {
+  let character1 = 'a';
+  let character2 = 'A';
+  let character3 = '?';
+  test('returns the inverse case of a string character', function () {
+    expect(convertCharacter(character1)).toBe('A');
+    expect(convertCharacter(character2)).toBe('a');
+    expect(convertCharacter(character3)).toBe('?');
+  })
+})

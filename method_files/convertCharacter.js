@@ -10,6 +10,8 @@ function convertCharacter(character) {
   } else if (charCode > 64 && charCode < 91) {
     // check if character is upper case and add 32 to its code to convert to lower case
     return character = String.fromCharCode(charCode + 32);
+  } else {
+    return character;
   }
 }
 
