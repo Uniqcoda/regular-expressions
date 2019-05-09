@@ -5,4 +5,5 @@ String.prototype.upperCaseFirst = function () {
    // convert the first letter to upper and add the other characters to it 
    return (this.charAt(0).toUpper() + this.slice(1));
 }
+// export the method for external use
 module.exports = String.prototype.upperCaseFirst;

@@ -1,8 +1,7 @@
 // A String method to check if a string has vowels
 String.prototype.hasVowels = function () {
-  let regex = /[aeiou]/g;
-  if (regex.test(this)) return true;
-  return false;
+  let regex = /[aeiou]/g; // a regular expression to match vowels
+  return regex.test(this);
 }
-// export the method to the test file
+// export the method for external use
 module.exports = String.prototype.hasVowels;

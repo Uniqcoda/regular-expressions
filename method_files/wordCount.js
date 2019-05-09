@@ -7,4 +7,5 @@ String.prototype.wordCount = function () {
   return this.wordsArray().length;
 }
 
+// export the method for external use
 module.exports = String.prototype.wordCount;

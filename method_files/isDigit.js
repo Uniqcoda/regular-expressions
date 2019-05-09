@@ -1,8 +1,7 @@
 // A String method to check if a string is only one digit
 String.prototype.isDigit = function () {
-  let regex = /^[0-9]$/;
-  if (regex.test(this)) return true;
-  return false;
+  let regex = /^[0-9]$/; // a regular expression to match only one digit
+  return regex.test(this);
 }
-// export the method to the test file
+// export the method for external use
 module.exports = String.prototype.isDigit;
