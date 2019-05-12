@@ -2,7 +2,7 @@
 String.prototype.numberWords = function () {
   // an array representing every index in words
   let indexInWords = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
-  let digitsArray = this.match(/([0-9])/g);   // an array of all digits in the given string
+  let digitsArray = this.match(/[0-9]/g);   // an array of all digits in the given string
   let digitsInWords = []; // a new array to save every number in words 
   for (let index = 0; index < digitsArray.length; index++) {
     let digit = digitsArray[index];

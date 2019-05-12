@@ -7,7 +7,7 @@ let inverseCase = require('../method_files/inverseCase');
 String.prototype.alternatingCase = function () {
   let regex = /([a-z])/;    // a regular expression to match lower case
   let newArray = [];  
-  newArray.push(this[0].toLower());    // start by converting the first character to lowercase
+  newArray.push(this[0].toLower());    // start by converting the first character to lowercase and pushing to newArray
   for (let index = 1; index < this.length; index++) {
     // for other characters, inverse their cases based on the case of the most recent character
     if (regex.test(newArray[index - 1])) {

@@ -5,8 +5,8 @@ let toLower = require('../method_files/toLower');
 String.prototype.inverseCase = function () {
   let regex1 = /([a-z])/; // a regular expression to match lower cases
   let regex2 = /([A-Z])/; // a regular expression to match upper cases
-  let newArray = [];  
-  // loop through array and inverse the case of each element, then push to newArray
+  let newArray = [];
+  // loop through the string and inverse the case of each character, then push to newArray
   for (let index = 0; index < this.length; index++) {
     if (regex1.test(this[index])) { // test if the character is lower case
       newArray.push(this[index].toUpper());

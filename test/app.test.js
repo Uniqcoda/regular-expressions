@@ -34,7 +34,7 @@ let upperCaseFirst = require('../method_files/upperCaseFirst');
 describe('to for the upperCaseFirst method', function () {
   test('returns first letter as upper case', function () {
     let text = new String('my name is my name.');
-    expect(text.upperCaseFirst()).toEqual('My name is my name.');    
+    expect(text.upperCaseFirst()).toEqual('My name is my name.');
   })
 })
 
@@ -70,7 +70,7 @@ describe('test for the wordCount method', function () {
   })
 })
 
-// toCurrency (typeof String): Returns a currency representation of the String e.g 11111.11 should be represented as 11,111.11.
+// toCurrency (typeof String): Returns a currency representation of the String e.g 11111.11 should be represented as 11,111.11
 let toCurrency = require('../method_files/toCurrency');
 describe('test for the toCurrency method', function () {
   test('to add a comma for every 3 digits before a dot', function () {
@@ -104,7 +104,7 @@ let alternatingCase = require('../method_files/alternatingCase');
 describe('test for alternatingCase method', function () {
   test('returns a string in alternating case', function () {
     let text = new String('onomatopoeia');
-  expect(text.alternatingCase()).toEqual('oNoMaToPoEiA');  
+    expect(text.alternatingCase()).toEqual('oNoMaToPoEiA');
   })
 })
 
