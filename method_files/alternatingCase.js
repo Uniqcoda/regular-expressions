@@ -5,17 +5,16 @@ let toLower = require('../method_files/toLower');
 let inverseCase = require('../method_files/inverseCase');
 
 String.prototype.alternatingCase = function () {
-  let regex = /([a-z])/;    // a regular expression to match lower cases
-  let array = this.split(''); 
+  let regex = /([a-z])/;    // a regular expression to match lower case
   let newArray = [];  
-  newArray.push(array[0].inverseCase());    // start by inversing the case of the first character
-  for (let index = 1; index < array.length; index++) {
+  newArray.push(this[0].toLower());    // start by converting the first character to lowercase
+  for (let index = 1; index < this.length; index++) {
     // for other characters, inverse their cases based on the case of the most recent character
     if (regex.test(newArray[index - 1])) {
-      newArray.push(array[index].toUpper())
+      newArray.push(this[index].toUpper())
       continue;
     };
-    newArray.push(array[index].toLower());
+    newArray.push(this[index].toLower());
   }
   return newArray.join('');
 }

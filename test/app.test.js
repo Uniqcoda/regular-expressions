@@ -103,7 +103,7 @@ describe('test for the inverseCase method', function () {
 let alternatingCase = require('../method_files/alternatingCase');
 describe('test for alternatingCase method', function () {
   test('returns a string in alternating case', function () {
-    let text = new String('Onomatopoeia');
+    let text = new String('onomatopoeia');
   expect(text.alternatingCase()).toEqual('oNoMaToPoEiA');  
   })
 })
